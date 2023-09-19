@@ -40,9 +40,15 @@ body {
   position: absolute;
   top: 0;
   height: 100%;
-  background: rgba(0, 0, 0, 0.9);
+  background: rgba(255, 255, 255, 0.9);
 }
 .aboutusbg {
   background: url(../forest/pexels-eberhard-grossgasteiger-1302242.jpg)
     no-repeat center center/cover;
+}
+.test {
+  background: url(/img/test\ background.jpg) no-repeat center center/cover;
+}
+.tesst {
+  background: #00000052;
 }
