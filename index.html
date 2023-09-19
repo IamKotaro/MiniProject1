@@ -48,7 +48,7 @@
               <a href="#home" class="nav-link text-center">Home</a>
             </li>
             <li class="nav-item">
-              <a href="#roperties" class="nav-link text-center">Properties</a>
+              <a href="#properties" class="nav-link text-center">Properties</a>
             </li>
             <li class="nav-item">
               <a href="#about" class="nav-link text-center">About Us</a>
@@ -67,19 +67,21 @@
       <div class="container p-5">
         <div class="d-sm-flex">
           <div>
-            <h1 class="text-light" style="margin-top: 50px">
-              Hello there! <span class="text-warning">Travelers</span>
-            </h1>
-            <p class="h3 text-light lead">
-              AirBnB We'll be always there for your adventures
-            </p>
-            <button
-              class="btn btn-warning btn-lg"
-              data-bs-toggle="modal"
-              data-bs-target="#booknow"
-            >
-              Book now
-            </button>
+            <div class="container p-3 rounded">
+                <h1 class="text-light">
+                Hello there! <span class="text-warning">Travelers</span>
+                </h1>
+                <p class="h3 text-light lead">
+                AirBnB We'll be always there for your adventures
+                </p>
+                <button
+                class="btn btn-warning btn-lg"
+                data-bs-toggle="modal"
+                data-bs-target="#booknow"
+                >
+                Sign up
+                </button>
+            </div>
           </div>
           <img
             src=""
@@ -90,9 +92,10 @@
       </div>
     </section>
     <!-- person -->
-    <div class="bg-danger">
-      <section class="container d-flex" style="padding: 2rem">
-        <div>
+    <section class="bg-danger text-center">
+      <div class="container d-flex" style="padding: 2rem">
+        <div class="row">
+        <div class="col-md">
           <img
             src="./img/User/CEO.jpg"
             alt="Ceo"
@@ -100,20 +103,20 @@
             style="width: 250px"
           />
         </div>
-        <div class="h2 my-5 mx-5 text-light">
-          James Smith CEO and Owner
-          <p class="h3 lead">
-            the visionary behind our Airbnb platform. With a passion for
-            hospitality and a commitment to providing memorable experiences,
-            James leads our team with dedication and innovation. His
-            entrepreneurial spirit and deep understanding of the travel industry
-            drive our mission to create exceptional stays for guests and
-            opportunities for hosts. Join us on this journey, guided by James's
-            leadership, as we make your Airbnb experience truly unforgettable.
-          </p>
+            <div class="col-md h2 text-light">
+            James Smith CEO and Owner
+            <p class="h3 lead">
+                the visionary behind our Airbnb platform. With a passion for
+                hospitality and a commitment to providing memorable experiences,
+                James leads our team with dedication and innovation. His
+                entrepreneurial spirit and deep understanding of the travel industry
+                drive our mission to create exceptional stays for guests and
+                opportunities for hosts. Join us on this journey, guided by James's
+                leadership, as we make your Airbnb experience truly unforgettable.
+            </p>
+            </div>
         </div>
-      </section>
-    </div>
+    </section>
     <!-- first cards -->
     <section id="roperties" class="p-5">
       <div class="container">
@@ -175,7 +178,7 @@
     </section>
     <!-- Properties -->
     <section style="margin-right: 12%; margin-left: 12%">
-      <h2>PROPERTIES TO EXPLORE</h2>
+      <h2 id="properties">PROPERTIES TO EXPLORE</h2>
       <div class="row">
         <div class="col-md card m-2">
           <img
@@ -190,23 +193,23 @@
               <li class="list-group-item">1 king-size bed</li>
               <li class="list-group-item">1,890₱ per night</li>
             </ul>
-            <a href="#" class="btn btn-outline-danger mt-2">Book now</a>
+            <a href="./properties.html" class="btn btn-outline-danger mt-2">Explore</a>
           </div>
         </div>
         <div class="col-md card m-2">
           <img
-            src="./img/Makati, Philippines/jason-briscoe-GliaHAJ3_5A-unsplash.jpg"
+            src="./img/2nd row properties/pampalet.webp"
             alt="airbnb"
             class="card-img-top"
           />
           <div class="card-body">
-            <div class="card-title h3">lakeside House with kitchen</div>
+            <div class="card-title h3">Lakeside Hotel</div>
             <ul class="list-group">
               <li class="list-group-item">Lakeside Tagaytay</li>
-              <li class="list-group-item">2 single beds, 1-kitchen</li>
-              <li class="list-group-item">2,800₱ per night</li>
+              <li class="list-group-item">2 single beds</li>
+              <li class="list-group-item">5,400₱ per night</li>
             </ul>
-            <a href="#" class="btn btn-outline-danger mt-2">Book now</a>
+            <a href="./lakeside.html" class="btn btn-outline-danger mt-2">Explore</a>
           </div>
         </div>
         <div class="col-md card m-2">
@@ -222,7 +225,7 @@
               <li class="list-group-item">1 queen-size beds</li>
               <li class="list-group-item">3,100₱ per night</li>
             </ul>
-            <a href="#" class="btn btn-outline-danger mt-2">Book now</a>
+            <a href="#" class="btn btn-outline-danger mt-2">Explore</a>
           </div>
         </div>
         <div class="col-md card m-2">
@@ -240,7 +243,7 @@
               <li class="list-group-item">3 double beds</li>
               <li class="list-group-item">3,503₱ per night</li>
             </ul>
-            <a href="#" class="btn btn-outline-danger mt-2">Book now</a>
+            <a href="#" class="btn btn-outline-danger mt-2">Explore</a>
           </div>
         </div>
       </div>
@@ -319,6 +322,8 @@
 
     <!-- TESTIMONAILS -->
   <section class="test p-5">
+    <div class="h2 text-center text-light">Customer Feedbacks</div>
+    <p class="text-light text-center container p-3">Hear it out from our loyal customers! Their stories and experiences speak volumes about the exceptional stays and memorable moments they've enjoyed through our Airbnb platform. Explore their testimonials and join our community of satisfied guests today!</p>
     <div class="container tesst d-flex p-3 rounded">
       <div class="row">
         <div class="col-md text-center p-1 m-1 rounded text-light h-100">
@@ -390,8 +395,10 @@
     <!-- About us -->
 
     <section id="about" class="bg-danger">
-      <div class="container text-center p-5 text-light">
-        <h2 class="p-5">OUR DEPARTMENT HEADS</h2>
+      <div class="container text-center p-3 text-light">
+        <div class="h2">What do we do?</div>
+        <p>What do we do? We provide you with unforgettable stays, unique experiences, and memorable moments through our handpicked selection of exceptional Airbnb properties. Discover your next adventure with us today</p>
+        <h2 class="p-3">OUR DEPARTMENT HEADS</h2>
         <div class="row">
           <div class="col-md text-center">
             <img

@@ -50,5 +50,8 @@ body {
   background: url(/img/test\ background.jpg) no-repeat center center/cover;
 }
 .tesst {
-  background: #00000052;
+  background: #00000067;
+}
+.bghotel {
+  background: url(/img/bghotel1.jpg) no-repeat center center/cover;
 }

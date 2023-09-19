@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBnB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body id="home">
+    <!-- navbar -->
+    <nav
+      class="bg-dark mainnav1 navbar navbar-expand-lg navbar-light py-3 sticky-top"
+    >
+      <div class="container">
+        <a href="#" class="text-light navbar-brand fa-regular fa-house-2xl bi bi-house-heart"
+          >Air-B n
+          B</a
+        >
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbarmain" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="index.html" class="nav-link text-center">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#roperties" class="nav-link text-center">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a href="about.html" class="nav-link text-center">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="contact.html" class="nav-link text-center">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <section class="bghotel p-5">
+        <div class="container p-5 tesst">
+            <h1 class="text-light">Hotel Room at Twin Lakes Tagaytay</h1>
+            <p class="h2 text-light p-2">5,400₱ per night</p>
+            <p class="h2 text-light p-2">Amenities in my hotel</p>
+            <ul class="">
+                <li class="list-group-item text-light lead"><span class="text-warning">Free Wi-Fi:</span> Stay connected with high-speed internet access available throughout the property, allowing you to work remotely or stream your favorite shows.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Laundry Facilities:</span> Guests can take advantage of our laundry facilities for added convenience during longer stays.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Airport Shuttle:</span> Arriving or departing? Our airport shuttle service makes your travel experience hassle-free.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Parking:</span> We offer secure and convenient parking options for guests traveling by car.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Meeting and Event Spaces:</span> Host successful meetings and special events in our versatile event spaces equipped with audiovisual facilities and catering services.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Private Lake Access:</span> Direct access to the lake, allowing guests to swim, sunbathe, fish, kayak, or canoe right from the hotel's grounds.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Boat Rentals:</span> Offer guests the option to rent rowboats, paddleboards, or even motorized boats for exploring the lake.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Lakeside Dining:</span> An on-site restaurant or dining terrace overlooking the lake, providing a picturesque setting for meals</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Sunset Cruises:</span> Arrange for boat tours or sunset cruises, allowing guests to experience the beauty of the lake at twilight.</li>
+                <li class="list-group-item text-light lead"><span class="text-warning">Waterfront Bar:</span> A bar or lounge with lake views, ideal for sipping cocktails and enjoying the serene ambiance.</li>
+            </ul>
+            <div class="container text-center p-5">
+                <div class="row">
+                  <div class="col h-100">
+                    <img src="./img/lake side/5.webp" alt="hotel" class="rounded p-1" style="width: 300px;">
+                  </div>
+                  <div class="col h-100">
+                    <img src="./img/lake side/1.jpg" alt="hotel" class="rounded p-1" style="width: 300px;">
+                  </div>
+                  <div class="col h-100">
+                    <img src="./img/lake side/6.webp" alt="hotel" class="rounded p-1" style="width: 300px;">
+                  </div>
+                </div>
+                <div class="row">
+                  <div class="col h-100">
+                    <img src="./img/lake side/2.jpg" alt="hotel" class="rounded p-1" style="width: 300px; height: 200px;">
+                  </div>
+                  <div class="col h-100">
+                    <img src="./img/lake side/3.jpg" alt="hotel" class="rounded p-1" style="width: 300px;">
+                  </div>
+                  <div class="col h-100">
+                    <img src="./img/lake side/4.jpg" alt="hotel" class="rounded p-1" style="width: 300px;">
+                  </div>
+                </div>
+            </div>
+            <button class="btn btn-danger">Book now</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer class="p-5 bg-dark text-white text-center position-relative">
+        <div class="container p-2">
+          <a href="https://www.facebook.com/" class="bi bi-facebook btn btn-outline-danger"></a>
+          <a href="https://www.youtube.com/" class="bi bi-youtube btn btn-outline-danger"></a>
+          <a href="https://www.instagram.com/" class="bi bi-instagram btn btn-outline-danger"></a>
+          <a href="https://www.linkedin.com/" class="bi bi-linkedin btn btn-outline-danger"></a>
+          <a href="https://www.twitter.com/" class="bi bi-twitter btn btn-outline-danger"></a>
+        </div>
+        <div class="container">
+          <p class="lead">Copyright &copy; AIRBNB 2023</p>
+          <a href="#" class="position-absolute bottom-0 end-0 p-5">
+            <i class="bi bi-arrow-up-circle h1 text-danger"></i>
+          </a>
+        </div>
+      </footer>
+      </section>
+      <script
+        src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+        crossorigin="anonymous"
+      ></script>
+    </body>
+  </html>
+  
