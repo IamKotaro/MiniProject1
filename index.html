@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AirBnB</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://api.mapbox.com/mapbox-gl-js/v2.9.1/mapbox-gl.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css"
+    />
+  </head>
+  <body>
+    <!-- navbar -->
+    <nav
+      class="bg-dark mainnav1 navbar navbar-expand-lg navbar-light py-3 sticky-top"
+    >
+      <div class="container">
+        <a href="#" class="text-light navbar-brand fa-regular fa-house-2xl"
+          ><img src="./airbnb-white.svg" alt="logo" class="airbnblogo" />Air-B n
+          B</a
+        >
+        <button
+          class="navbar-toggler bg-light"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navmenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse navbarmain" id="navmenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a href="#home" class="nav-link text-center">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#roperties" class="nav-link text-center">Properties</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link text-center">About Us</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link text-center">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- hero/showcase -->
+    <section
+      class="containerhero text-light p-0 p-lg-0 pt-lg-5 text-center text-sm-start"
+    >
+      <div class="container p-5">
+        <div class="d-sm-flex">
+          <div>
+            <h1 class="text-light" style="margin-top: 50px">
+              Hello there! <span class="text-warning">Travelers</span>
+            </h1>
+            <p class="h3 text-light lead">
+              AirBnB We'll be always there for your adventures
+            </p>
+            <button
+              class="btn btn-warning btn-lg"
+              data-bs-toggle="modal"
+              data-bs-target="#booknow"
+            >
+              Book now
+            </button>
+          </div>
+          <img
+            src=""
+            alt=""
+            class="img-fluid w-50 d-none d-sm-block p-5 rounded"
+          />
+        </div>
+      </div>
+    </section>
+    <!-- person -->
+    <div class="bg-danger">
+      <section class="container d-flex" style="padding: 2rem">
+        <div>
+          <img
+            src="./img/CEO.jpg"
+            alt=""
+            class="rounded-circle"
+            style="width: 250px"
+          />
+        </div>
+        <div class="h2 my-5 mx-5 text-light">
+          James Smith Ceo and Owner
+          <p class="h3 lead">
+            the visionary behind our Airbnb platform. With a passion for
+            hospitality and a commitment to providing memorable experiences,
+            James leads our team with dedication and innovation. His
+            entrepreneurial spirit and deep understanding of the travel industry
+            drive our mission to create exceptional stays for guests and
+            opportunities for hosts. Join us on this journey, guided by James's
+            leadership, as we make your Airbnb experience truly unforgettable.
+          </p>
+        </div>
+      </section>
+    </div>
+    <!-- first cards -->
+    <section class="p-5">
+      <div class="container">
+        <h2 class="p-3">FEATURES THAT WE ARE OFFERING</h2>
+        <div class="row text-center g-4">
+          <!-- first card -->
+          <div class="col-md">
+            <div class="card h-100 bg-dark text-light">
+              <div class="h1 m-3">
+                <i class="bi bi-tree"></i>
+              </div>
+              <h3 class="card-title mb-3">Forest House</h3>
+              <p class="card-text p-3">
+                Calmness in the heart of nature with our Airbnb forest house.
+                Immerse yourself in the tranquil beauty of the woods.
+              </p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card h-100 bg-dark text-light">
+              <div class="h1 m-3">
+                <i class="bi bi-building"></i>
+              </div>
+              <h3 class="card-title mb-3">Airbnb-City</h3>
+              <p class="card-text p-3 text-justify">
+                Experience city living at its finest in our Airbnb urban oasis.
+                Our stylish house offers access to cultural hotspots, dining,
+                and nightlife.
+              </p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card h-100 bg-dark text-light">
+              <div class="h1 m-3">
+                <i class="bi bi-water"></i>
+              </div>
+              <h3 class="card-title mb-3">Airbnb-Lakeside</h3>
+              <p class="card-text p-3">
+                "Escape to a lakeside paradise with our Airbnb house near the
+                water's edge. Breathe in the fresh air of the nature.
+              </p>
+            </div>
+          </div>
+          <div class="col-md">
+            <div class="card h-100 bg-dark text-light">
+              <div class="h1 m-3">
+                <i class="bi bi-globe"></i>
+              </div>
+              <h3 class="card-title mb-3">International Booking</h3>
+              <p class="card-text p-3">
+                Explore the world with Airbnb's global homes. From city to
+                beachfront beauty, your perfect international stay awaits. Book
+                now and journey with us.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Properties -->
+    <section>
+      <div class="text-center m-3">
+        <div class="row">
+          <div class="col-md card h-100">
+            <div
+              id="demo"
+              class="carousel card-img-top h-100"
+              data-bs-ride="carousel"
+            >
+              <!-- Indicator Dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo"
+                  data-bs-slide-to="4"
+                ></button>
+              </div>
+
+              <!-- Slideshow Carousel -->
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img
+                    src="./Makati, Philippines/francesca-tosolini-HD7QBx2Yfa4-unsplash.jpg"
+                    alt="Beach1"
+                    class="d-block img-fluid"
+                    style="width: 500px;"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Makati, Philippines/jason-briscoe-GliaHAJ3_5A-unsplash.jpg"
+                    alt="Beach2"
+                    class="d-block img-fluid"
+                  />
+                </div>
+                <div class="carousel-item img-fluid">
+                  <img
+                    src="./Makati, Philippines/kenny-eliason-iAftdIcgpFc-unsplash.jpg"
+                    alt="Beach3"
+                    class="d-block img-fluid"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Makati, Philippines/pexels-scott-webb-1029599.jpg"
+                    alt="Beach3"
+                    class="d-block img-fluid"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Makati, Philippines/spacejoy-c0JoR_-2x3E-unsplash.jpg"
+                    alt="Beach3"
+                    class="d-block h-100 h-100 img-fluid"
+                    style=" width: 500px height: 500px"
+                  />
+                </div>
+              </div>
+
+              <!-- Left and Right Control -->
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            <div class="card-body h-100">
+              <div class="card-title h3">Cottege in Baguio</div>
+              <ul class="List-group">
+                <li class="list-group-item">
+                  Camp John Hay Forest Cabin 16 A3 (Third Floor)
+                </li>
+                <li class="list-group-item">3 double beds</li>
+                <li class="list-group-item">3,503₱ per night</li>
+              </ul>
+            </div>
+          </div>
+          <!-- prop 1 -->
+          <div class="col-md card h-100">
+            <div
+              id="demo1"
+              class="carousel card-img-top h-100"
+              data-bs-ride="carousel"
+            >
+              <!-- Indicator Dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="4"
+                ></button>
+              </div>
+
+              <!-- Slideshow Carousel -->
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img
+                    src=".//"
+                    alt="Beach1"
+                    class="d-block w-100 h-100 h-100"
+                    ;
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/2598c705-0ec9-493c-9961-80e0e56bac54.webp"
+                    alt="Beach2"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item h-100 h-100">
+                  <img
+                    src="./Cottage in Baguio/fbb18095-e49e-47e3-9bea-be75c0f135fc.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/bed3647e-30c2-421e-8300-66165b358c2b.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/8b2bf038-2d09-4dcf-b871-23a6890b364f.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+              </div>
+
+              <!-- Left and Right Control -->
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo1"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo1"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            <div class="card-body h-100">
+              <div class="card-title h3">Cottege in Baguio</div>
+              <ul class="List-group">
+                <li class="list-group-item">
+                  Camp John Hay Forest Cabin 16 A3 (Third Floor)
+                </li>
+                <li class="list-group-item">3 double beds</li>
+                <li class="list-group-item">3,503₱ per night</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md card h-100">
+            <div
+              id="demo1"
+              class="carousel card-img-top h-100"
+              data-bs-ride="carousel"
+            >
+              <!-- Indicator Dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="4"
+                ></button>
+              </div>
+
+              <!-- Slideshow Carousel -->
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img
+                    src=".//"
+                    alt="Beach1"
+                    class="d-block w-100 h-100 h-100"
+                    ;
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/2598c705-0ec9-493c-9961-80e0e56bac54.webp"
+                    alt="Beach2"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item h-100 h-100">
+                  <img
+                    src="./Cottage in Baguio/fbb18095-e49e-47e3-9bea-be75c0f135fc.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/bed3647e-30c2-421e-8300-66165b358c2b.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/8b2bf038-2d09-4dcf-b871-23a6890b364f.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+              </div>
+
+              <!-- Left and Right Control -->
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo1"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo1"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            <div class="card-body h-100">
+              <div class="card-title h3">Cottege in Baguio</div>
+              <ul class="List-group">
+                <li class="list-group-item">
+                  Camp John Hay Forest Cabin 16 A3 (Third Floor)
+                </li>
+                <li class="list-group-item">3 double beds</li>
+                <li class="list-group-item">3,503₱ per night</li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md card h-100">
+            <div
+              id="demo1"
+              class="carousel card-img-top h-100"
+              data-bs-ride="carousel"
+            >
+              <!-- Indicator Dots -->
+              <div class="carousel-indicators">
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="0"
+                  class="active"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="1"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="2"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="3"
+                ></button>
+                <button
+                  type="button"
+                  data-bs-target="#demo1"
+                  data-bs-slide-to="4"
+                ></button>
+              </div>
+
+              <!-- Slideshow Carousel -->
+              <div class="carousel-inner h-100">
+                <div class="carousel-item active h-100">
+                  <img
+                    src=".//"
+                    alt="Beach1"
+                    class="d-block w-100 h-100 h-100"
+                    ;
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/2598c705-0ec9-493c-9961-80e0e56bac54.webp"
+                    alt="Beach2"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item h-100 h-100">
+                  <img
+                    src="./Cottage in Baguio/fbb18095-e49e-47e3-9bea-be75c0f135fc.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/bed3647e-30c2-421e-8300-66165b358c2b.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+                <div class="carousel-item">
+                  <img
+                    src="./Cottage in Baguio/8b2bf038-2d09-4dcf-b871-23a6890b364f.webp"
+                    alt="Beach3"
+                    class="d-block w-100 h-100 h-100"
+                  />
+                </div>
+              </div>
+
+              <!-- Left and Right Control -->
+
+              <button
+                class="carousel-control-prev"
+                type="button"
+                data-bs-target="#demo1"
+                data-bs-slide="prev"
+              >
+                <span class="carousel-control-prev-icon"></span>
+              </button>
+              <button
+                class="carousel-control-next"
+                type="button"
+                data-bs-target="#demo1"
+                data-bs-slide="next"
+              >
+                <span class="carousel-control-next-icon"></span>
+              </button>
+            </div>
+            <div class="card-body h-100">
+              <div class="card-title h3">Cottege in Baguio</div>
+              <ul class="List-group">
+                <li class="list-group-item">
+                  Camp John Hay Forest Cabin 16 A3 (Third Floor)
+                </li>
+                <li class="list-group-item">3 double beds</li>
+                <li class="list-group-item">3,503₱ per night</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md card h-100">
+            <div
+              id="demo"
+              class="carousel card-img-top h-100"
+              data-bs-ride="carousel"
+            ><!-- properties row2 -->
+            
+        </div>
+      </div>
+    </section>
+    <!-- footer -->
+    <section class="bg-dark">
+      <div class="container text-light">
+        <div class="row mt">
+        <div class="col-xs-12 col-sm-6 col-md-3 col-xxl-3 mt-5">
+            <img src="./airbnb-white.svg" style="height: 140px;" alt="logo 2">
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 col-xxl-3 mt-5">
+            <h3>Our Products</h3>
+            <ul class="List-group">
+                <li class="list-group-item">Help Center</li>
+                <li class="list-group-item">Air BnB Friendly Apartments</li>
+                <li class="list-group-item">Investors</li>
+                <li class="list-group-item">Community Forum</li>
+                <li class="list-group-item">Frequently Asked Questions (FAQ's)</li>
+            </ul>
+        </div>
+        <div class="col-xs-12 col-sm-4 col-md-3 col-xxl-3 mt-5">
+          <i class="btn btn-primary bi bi-facebook text-light"></i>
+          <i class="btn btn-primary bi bi-instagram text-light"></i>
+          <i class="btn btn-primary bi bi-youtube text-light"></i>
+          <i class="btn btn-primary bi bi-twitter text-light"></i>
+          <i class="btn btn-primary bi bi-linkedin text-light"></i>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3 col-xxl-3 mt-5">
+            <h3>Search Here</h3>
+            <form class="d-flex input-group">
+              <input class="form-control me-2 " type="text" placeholder="Search" />
+              <button class="btn btn-light input-group-text" type="button">Search</button>
+            </form>
+          </div>
+        </div>
+    </div>
+    <footer class="border-top bg-dark text-light">
+      <p class="text-center mt-2">Copyright 2023 | AirBNB</p>
+   </footer>
+    </section>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
